@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+	<!-- CSS only -->
+	{{ encore_entry_link_tags('add') }}
+{% endblock %}
+
+{% block body %}
+	{# point d'entree React #}
+	<div id="add-root"></div>
+{% endblock %}
+
+{% block javascripts %}
+	<!-- JavaScript Bundle with Popper -->
+	{{ encore_entry_script_tags('add') }}
+{% endblock %}
