@@ -13,7 +13,7 @@ import './bootstrap';
 //import de la librairie REACT
 import React from "react";
 import { createRoot } from 'react-dom/client';
-// import Main from "./components/Main";
+//import Main from "./components/Main";
 import PriceList from "./components/PriceList";
 
 const priceList = [
