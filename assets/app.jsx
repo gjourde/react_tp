@@ -13,7 +13,8 @@ import './bootstrap';
 //import de la librairie REACT
 import React from "react";
 import { createRoot } from 'react-dom/client';
-import Main from "./components/Main";
+// import Main from "./components/Main";
+import PriceList from "./components/PriceList";
 
 const priceList = [
     { category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football" },
@@ -26,4 +27,4 @@ const priceList = [
 
 const appRoot = document.getElementById('app-root');
 const root = createRoot(appRoot); // createRoot(container!) if you use TypeScript
-root.render(<Main />);
+root.render(<PriceList myList={priceList} />);
