@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 /*
- * Components Main
+ * Components List
  */
 export default class PriceList extends Component {
     constructor() {
@@ -9,16 +9,17 @@ export default class PriceList extends Component {
     }
 
     render() {
-        
+        //const { list } = this.props.myList
+        console.log(this.props.myList);
         return (
             <div>
-                {this.props.list.map((line, index) => 
-                <ul key={index}>
-                    <li>{line.category}</li>
-                    <li> {line.price}</li>
-                    <li>{line.stocked}</li>   
-                    <li>{line.name}</li>
-                </ul>)}
+                {this.props.myList.map((line, index) =>
+                    <ul key={index}>
+                        <li>{line.category}</li>
+                        <li>{line.price}</li>
+                        <li>{line.stocked}</li>
+                        <li>{line.name}</li>
+                    </ul>)}
             </div>
         )
     }
